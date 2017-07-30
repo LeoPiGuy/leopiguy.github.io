@@ -62,7 +62,9 @@ function memesRandom() {
 function login(input) {
 	inputHash = hashString(input);
 	if(inputHash == "901646482") {
-		window.location.href = "https://google.com";
+		url = window.location.href;
+		console.log(url);
+		window.location.href = url + "login.html";
 	}
 }
 
