@@ -29,7 +29,7 @@ window.addEventListener('keypress', function(key) {
 });
 
 function login() {
-
+	alert("You escaped the memes");
 }
 
 function memesRandom() {
@@ -37,5 +37,8 @@ function memesRandom() {
 	let randomInt = Math.floor(Math.random() * (((length - 1)+ 1)));
 	// console.log(length);
 	// console.log(randomInt);
-	window.open(memes[randomInt]);
+	var width = window.outerWidth;
+	var height = window.outerHeight;
+	window.open(memes[randomInt], "_blank", `height=${height},width=${width}`);
+		//,scrollbars=yes,toolbar=no,menubar=no,resizable=yes,location=no,directories=no,status=no,titlebar=no,left=400,top=120");
 }
