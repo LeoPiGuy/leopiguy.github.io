@@ -64,7 +64,7 @@ function login(input) {
 	if(inputHash == "901646482") {
 		url = window.location.href;
 		console.log(url);
-		window.location.href = url + "login.html";
+		window.location.href = url + "login.html?login=true";
 	}
 }
 
